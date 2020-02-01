@@ -1,0 +1,60 @@
+\hypertarget{_slot_cooldown_8h}{}\section{Slot\+Cooldown/\+Slot\+Cooldown.h File Reference}
+\label{_slot_cooldown_8h}\index{Slot\+Cooldown/\+Slot\+Cooldown.\+h@{Slot\+Cooldown/\+Slot\+Cooldown.\+h}}
+
+
+Implementation of the player slots cooldown logic.  
+
+
+{\ttfamily \#include $<$A\+P\+I/\+Ark/\+Ark.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}json.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}D\+B\+Handler.\+h\char`\"{}}\newline
+Include dependency graph for Slot\+Cooldown.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{_slot_cooldown_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_slot_cooldown_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_slot_cooldown}{Slot\+Cooldown}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespace_slot_cooldown_af1d102851d318b69e6b808f8c1b0f6fa}{Slot\+Cooldown\+::\+Init\+Slot\+Cooldown}} (void)
+\begin{DoxyCompactList}\small\item\em Initialisation of the Slot Cooldown. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_slot_cooldown_acadf0d52f01444ce96d02fefd725abe8}{Slot\+Cooldown\+::\+Normalize\+Slots}} (std\+::vector$<$ int $>$ $\ast$slots, long double Server\+Run\+Time)
+\begin{DoxyCompactList}\small\item\em Normalize slot cooldowns. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_slot_cooldown_ad36d7fcdac6fac169b44ce05b3ea98f9}{Slot\+Cooldown\+::\+Set\+Tribe\+Slot\+To\+Cooldown}} (int Tribe\+Id)
+\begin{DoxyCompactList}\small\item\em Sets tribe slot to cooldown. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespace_slot_cooldown_af34a0fce4996c0cb1f108dea38c9c00c}{Slot\+Cooldown\+::\+Suppress\+Player\+Join\+Tribe}} (int Tribe\+Id, int Players\+In\+Tribe)
+\begin{DoxyCompactList}\small\item\em Checks if it is possible to join a tribe. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespace_slot_cooldown_aa61b482a7729c7eb2a23d068f74477c3}{Slot\+Cooldown\+::\+Suppress\+Tribe\+Merge}} (int Tribe\+Id\+New\+Tribe, int Tribe\+Id\+Old\+Tribe, int Num\+Players\+In\+New\+Tribe, int Num\+Players\+In\+Old\+Tribe)
+\begin{DoxyCompactList}\small\item\em Checks if it is possible to merge a tribe. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_d_b_handler}{D\+B\+Handler}} $>$ \mbox{\hyperlink{namespace_slot_cooldown_a0945ac0ffac4f4655877d61f50837c70}{Slot\+Cooldown\+::database}}
+\begin{DoxyCompactList}\small\item\em Interface database. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implementation of the player slots cooldown logic. 
+
+\begin{DoxyAuthor}{Author}
+Matthias Birnthaler 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+15 May 2019 
+\end{DoxyDate}

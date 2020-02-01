@@ -1,0 +1,8 @@
+<map id="DBHandler/DBHandler.h" name="DBHandler/DBHandler.h">
+<area shape="rect" id="node2" href="$_d_b_handler_8cpp.html" title="Interface to the database. " alt="" coords="109,80,284,107"/>
+<area shape="rect" id="node3" href="$_slot_cooldown_8h.html" title="Implementation of the player slots cooldown logic. " alt="" coords="309,80,503,107"/>
+<area shape="rect" id="node4" href="$_commands_8cpp.html" title="Implementation of all Commands. " alt="" coords="5,155,188,181"/>
+<area shape="rect" id="node5" href="$_tribe_slot_cooldown_8cpp.html" title="Implementation of DLLMain. " alt="" coords="212,155,413,181"/>
+<area shape="rect" id="node6" href="$_hooks_8cpp.html" title="File containing the implementation for all needed Hooks. " alt="" coords="438,155,563,181"/>
+<area shape="rect" id="node7" href="$_slot_cooldown_8cpp.html" title="Implementation of the player slots cooldown logic. " alt="" coords="588,155,797,181"/>
+</map>

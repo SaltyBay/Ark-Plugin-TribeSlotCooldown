@@ -1,0 +1,248 @@
+\hypertarget{namespace_slot_cooldown}{}\section{Slot\+Cooldown Namespace Reference}
+\label{namespace_slot_cooldown}\index{Slot\+Cooldown@{Slot\+Cooldown}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespace_slot_cooldown_af1d102851d318b69e6b808f8c1b0f6fa}{Init\+Slot\+Cooldown}} (void)
+\begin{DoxyCompactList}\small\item\em Initialisation of the Slot Cooldown. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_slot_cooldown_acadf0d52f01444ce96d02fefd725abe8}{Normalize\+Slots}} (std\+::vector$<$ int $>$ $\ast$slots, long double Server\+Run\+Time)
+\begin{DoxyCompactList}\small\item\em Normalize slot cooldowns. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_slot_cooldown_ad36d7fcdac6fac169b44ce05b3ea98f9}{Set\+Tribe\+Slot\+To\+Cooldown}} (int Tribe\+Id)
+\begin{DoxyCompactList}\small\item\em Sets tribe slot to cooldown. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespace_slot_cooldown_af34a0fce4996c0cb1f108dea38c9c00c}{Suppress\+Player\+Join\+Tribe}} (int Tribe\+Id, int Players\+In\+Tribe)
+\begin{DoxyCompactList}\small\item\em Checks if it is possible to join a tribe. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespace_slot_cooldown_aa61b482a7729c7eb2a23d068f74477c3}{Suppress\+Tribe\+Merge}} (int Tribe\+Id\+New\+Tribe, int Tribe\+Id\+Old\+Tribe, int Num\+Players\+In\+New\+Tribe, int Num\+Players\+In\+Old\+Tribe)
+\begin{DoxyCompactList}\small\item\em Checks if it is possible to merge a tribe. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+F\+String \mbox{\hyperlink{namespace_slot_cooldown_ad9b4de67b82bb1e9f21fd5d5674b34be}{Suppress\+Player\+Join\+Tribe\+Message}}
+\begin{DoxyCompactList}\small\item\em Message for the player if tribe join is not possible. \end{DoxyCompactList}\item 
+F\+String \mbox{\hyperlink{namespace_slot_cooldown_abd12b2304b5bf308744798daca9419f6}{Suppress\+Merge\+Tribe\+Message}}
+\begin{DoxyCompactList}\small\item\em Message for the player if tribe merge is not possible. \end{DoxyCompactList}\item 
+F\+String \mbox{\hyperlink{namespace_slot_cooldown_a96c0601961d6636388621ee070136bd8}{Command\+Display\+Slots\+Message}}
+\begin{DoxyCompactList}\small\item\em Message for the player with the total of tribe player slots with cooldown. \end{DoxyCompactList}\item 
+F\+String \mbox{\hyperlink{namespace_slot_cooldown_ac0a5c9ed81d34ecf571126bc0ce8e1e7}{Command\+Display\+Slots\+Message\+Slot\+Cooldown}}
+\begin{DoxyCompactList}\small\item\em Message for the player with the left time for a slots cooldown. \end{DoxyCompactList}\item 
+F\+String \mbox{\hyperlink{namespace_slot_cooldown_a5b94faf2e06664e82c8811880e3ac662}{Command\+Prefix}}
+\begin{DoxyCompactList}\small\item\em Prefix for chat commands. \end{DoxyCompactList}\item 
+F\+String \mbox{\hyperlink{namespace_slot_cooldown_a5785ecad34ad6558721c26503620eeb2}{Command\+Display\+Slots}}
+\begin{DoxyCompactList}\small\item\em String for chat command display slots with cooldown. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{namespace_slot_cooldown_a45d147dcd56cfa641b7dc9f9303db683}{Message\+Display\+Size}}
+\begin{DoxyCompactList}\small\item\em Size of player notifications. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{namespace_slot_cooldown_a9c1b0776e8b6e909e5a94f465c7669e1}{Message\+Display\+Time}}
+\begin{DoxyCompactList}\small\item\em Display time for player notifications. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{namespace_slot_cooldown_a1684ab6db297facc86efbca540cd19f9}{Slot\+Cooldown}}
+\begin{DoxyCompactList}\small\item\em Cooldown time for slots in secounds. \end{DoxyCompactList}\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_d_b_handler}{D\+B\+Handler}} $>$ \mbox{\hyperlink{namespace_slot_cooldown_a0945ac0ffac4f4655877d61f50837c70}{database}}
+\begin{DoxyCompactList}\small\item\em Interface database. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespace_slot_cooldown_af1d102851d318b69e6b808f8c1b0f6fa}\label{namespace_slot_cooldown_af1d102851d318b69e6b808f8c1b0f6fa}} 
+\index{Slot\+Cooldown@{Slot\+Cooldown}!Init\+Slot\+Cooldown@{Init\+Slot\+Cooldown}}
+\index{Init\+Slot\+Cooldown@{Init\+Slot\+Cooldown}!Slot\+Cooldown@{Slot\+Cooldown}}
+\subsubsection{\texorpdfstring{Init\+Slot\+Cooldown()}{InitSlotCooldown()}}
+{\footnotesize\ttfamily void Slot\+Cooldown\+::\+Init\+Slot\+Cooldown (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Initialisation of the Slot Cooldown. 
+
+This function opens the database connection and initializes some variables ~\newline
+ \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespace_slot_cooldown_acadf0d52f01444ce96d02fefd725abe8}\label{namespace_slot_cooldown_acadf0d52f01444ce96d02fefd725abe8}} 
+\index{Slot\+Cooldown@{Slot\+Cooldown}!Normalize\+Slots@{Normalize\+Slots}}
+\index{Normalize\+Slots@{Normalize\+Slots}!Slot\+Cooldown@{Slot\+Cooldown}}
+\subsubsection{\texorpdfstring{Normalize\+Slots()}{NormalizeSlots()}}
+{\footnotesize\ttfamily void Slot\+Cooldown\+::\+Normalize\+Slots (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$ $\ast$}]{slots,  }\item[{long double}]{Server\+Run\+Time }\end{DoxyParamCaption})}
+
+
+
+Normalize slot cooldowns. 
+
+This function is to normalize the slot cooldown data. Expired cooldowns will get removed. Expired times will get sort ascending.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em slots} & vector with slots to normalize \\
+\hline
+\mbox{\tt in}  & {\em Server\+Run\+Time} & the current server runntime \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespace_slot_cooldown_ad36d7fcdac6fac169b44ce05b3ea98f9}\label{namespace_slot_cooldown_ad36d7fcdac6fac169b44ce05b3ea98f9}} 
+\index{Slot\+Cooldown@{Slot\+Cooldown}!Set\+Tribe\+Slot\+To\+Cooldown@{Set\+Tribe\+Slot\+To\+Cooldown}}
+\index{Set\+Tribe\+Slot\+To\+Cooldown@{Set\+Tribe\+Slot\+To\+Cooldown}!Slot\+Cooldown@{Slot\+Cooldown}}
+\subsubsection{\texorpdfstring{Set\+Tribe\+Slot\+To\+Cooldown()}{SetTribeSlotToCooldown()}}
+{\footnotesize\ttfamily void Slot\+Cooldown\+::\+Set\+Tribe\+Slot\+To\+Cooldown (\begin{DoxyParamCaption}\item[{int}]{Tribe\+Id }\end{DoxyParamCaption})}
+
+
+
+Sets tribe slot to cooldown. 
+
+This function sets one of a free slot of a given tribe to cooldown
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em Tribe\+Id} & the id of the tribe for which a slot will set on cooldown \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespace_slot_cooldown_af34a0fce4996c0cb1f108dea38c9c00c}\label{namespace_slot_cooldown_af34a0fce4996c0cb1f108dea38c9c00c}} 
+\index{Slot\+Cooldown@{Slot\+Cooldown}!Suppress\+Player\+Join\+Tribe@{Suppress\+Player\+Join\+Tribe}}
+\index{Suppress\+Player\+Join\+Tribe@{Suppress\+Player\+Join\+Tribe}!Slot\+Cooldown@{Slot\+Cooldown}}
+\subsubsection{\texorpdfstring{Suppress\+Player\+Join\+Tribe()}{SuppressPlayerJoinTribe()}}
+{\footnotesize\ttfamily bool Slot\+Cooldown\+::\+Suppress\+Player\+Join\+Tribe (\begin{DoxyParamCaption}\item[{int}]{Tribe\+Id,  }\item[{int}]{Players\+In\+Tribe }\end{DoxyParamCaption})}
+
+
+
+Checks if it is possible to join a tribe. 
+
+This function checks if a free slot is available to join a tribe
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em Tribe\+Id} & the id of tribe id to check \\
+\hline
+\mbox{\tt in}  & {\em Players\+In\+Tribe} & number of players in the tribe \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if tribe join is not possible, otherwise false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespace_slot_cooldown_aa61b482a7729c7eb2a23d068f74477c3}\label{namespace_slot_cooldown_aa61b482a7729c7eb2a23d068f74477c3}} 
+\index{Slot\+Cooldown@{Slot\+Cooldown}!Suppress\+Tribe\+Merge@{Suppress\+Tribe\+Merge}}
+\index{Suppress\+Tribe\+Merge@{Suppress\+Tribe\+Merge}!Slot\+Cooldown@{Slot\+Cooldown}}
+\subsubsection{\texorpdfstring{Suppress\+Tribe\+Merge()}{SuppressTribeMerge()}}
+{\footnotesize\ttfamily bool Slot\+Cooldown\+::\+Suppress\+Tribe\+Merge (\begin{DoxyParamCaption}\item[{int}]{Tribe\+Id\+New\+Tribe,  }\item[{int}]{Tribe\+Id\+Old\+Tribe,  }\item[{int}]{Num\+Players\+In\+New\+Tribe,  }\item[{int}]{Num\+Players\+In\+Old\+Tribe }\end{DoxyParamCaption})}
+
+
+
+Checks if it is possible to merge a tribe. 
+
+This function checks if there are enoth free spots to perform a tribe merge. Slots on cooldown of the old tribe will be inherited to the new tribe
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em Tribe\+Id\+New\+Tribe} & the id of tribe in witch to merge \\
+\hline
+\mbox{\tt in}  & {\em Tribe\+Id\+Old\+Tribe} & the id of the old tribe \\
+\hline
+\mbox{\tt in}  & {\em Num\+Players\+In\+New\+Tribe} & the current number of player in the new tribe \\
+\hline
+\mbox{\tt in}  & {\em Num\+Players\+In\+Old\+Tribe} & the current number of player in the old tribe \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if tribe merge is not possible, otherwise false 
+\end{DoxyReturn}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespace_slot_cooldown_a5785ecad34ad6558721c26503620eeb2}\label{namespace_slot_cooldown_a5785ecad34ad6558721c26503620eeb2}} 
+\index{Slot\+Cooldown@{Slot\+Cooldown}!Command\+Display\+Slots@{Command\+Display\+Slots}}
+\index{Command\+Display\+Slots@{Command\+Display\+Slots}!Slot\+Cooldown@{Slot\+Cooldown}}
+\subsubsection{\texorpdfstring{Command\+Display\+Slots}{CommandDisplaySlots}}
+{\footnotesize\ttfamily F\+String Slot\+Cooldown\+::\+Command\+Display\+Slots}
+
+
+
+String for chat command display slots with cooldown. 
+
+\mbox{\Hypertarget{namespace_slot_cooldown_a96c0601961d6636388621ee070136bd8}\label{namespace_slot_cooldown_a96c0601961d6636388621ee070136bd8}} 
+\index{Slot\+Cooldown@{Slot\+Cooldown}!Command\+Display\+Slots\+Message@{Command\+Display\+Slots\+Message}}
+\index{Command\+Display\+Slots\+Message@{Command\+Display\+Slots\+Message}!Slot\+Cooldown@{Slot\+Cooldown}}
+\subsubsection{\texorpdfstring{Command\+Display\+Slots\+Message}{CommandDisplaySlotsMessage}}
+{\footnotesize\ttfamily F\+String Slot\+Cooldown\+::\+Command\+Display\+Slots\+Message}
+
+
+
+Message for the player with the total of tribe player slots with cooldown. 
+
+\mbox{\Hypertarget{namespace_slot_cooldown_ac0a5c9ed81d34ecf571126bc0ce8e1e7}\label{namespace_slot_cooldown_ac0a5c9ed81d34ecf571126bc0ce8e1e7}} 
+\index{Slot\+Cooldown@{Slot\+Cooldown}!Command\+Display\+Slots\+Message\+Slot\+Cooldown@{Command\+Display\+Slots\+Message\+Slot\+Cooldown}}
+\index{Command\+Display\+Slots\+Message\+Slot\+Cooldown@{Command\+Display\+Slots\+Message\+Slot\+Cooldown}!Slot\+Cooldown@{Slot\+Cooldown}}
+\subsubsection{\texorpdfstring{Command\+Display\+Slots\+Message\+Slot\+Cooldown}{CommandDisplaySlotsMessageSlotCooldown}}
+{\footnotesize\ttfamily F\+String Slot\+Cooldown\+::\+Command\+Display\+Slots\+Message\+Slot\+Cooldown}
+
+
+
+Message for the player with the left time for a slots cooldown. 
+
+\mbox{\Hypertarget{namespace_slot_cooldown_a5b94faf2e06664e82c8811880e3ac662}\label{namespace_slot_cooldown_a5b94faf2e06664e82c8811880e3ac662}} 
+\index{Slot\+Cooldown@{Slot\+Cooldown}!Command\+Prefix@{Command\+Prefix}}
+\index{Command\+Prefix@{Command\+Prefix}!Slot\+Cooldown@{Slot\+Cooldown}}
+\subsubsection{\texorpdfstring{Command\+Prefix}{CommandPrefix}}
+{\footnotesize\ttfamily F\+String Slot\+Cooldown\+::\+Command\+Prefix}
+
+
+
+Prefix for chat commands. 
+
+\mbox{\Hypertarget{namespace_slot_cooldown_a0945ac0ffac4f4655877d61f50837c70}\label{namespace_slot_cooldown_a0945ac0ffac4f4655877d61f50837c70}} 
+\index{Slot\+Cooldown@{Slot\+Cooldown}!database@{database}}
+\index{database@{database}!Slot\+Cooldown@{Slot\+Cooldown}}
+\subsubsection{\texorpdfstring{database}{database}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{class_d_b_handler}{D\+B\+Handler}}$>$ Slot\+Cooldown\+::database\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Interface database. 
+
+\mbox{\Hypertarget{namespace_slot_cooldown_a45d147dcd56cfa641b7dc9f9303db683}\label{namespace_slot_cooldown_a45d147dcd56cfa641b7dc9f9303db683}} 
+\index{Slot\+Cooldown@{Slot\+Cooldown}!Message\+Display\+Size@{Message\+Display\+Size}}
+\index{Message\+Display\+Size@{Message\+Display\+Size}!Slot\+Cooldown@{Slot\+Cooldown}}
+\subsubsection{\texorpdfstring{Message\+Display\+Size}{MessageDisplaySize}}
+{\footnotesize\ttfamily float Slot\+Cooldown\+::\+Message\+Display\+Size}
+
+
+
+Size of player notifications. 
+
+\mbox{\Hypertarget{namespace_slot_cooldown_a9c1b0776e8b6e909e5a94f465c7669e1}\label{namespace_slot_cooldown_a9c1b0776e8b6e909e5a94f465c7669e1}} 
+\index{Slot\+Cooldown@{Slot\+Cooldown}!Message\+Display\+Time@{Message\+Display\+Time}}
+\index{Message\+Display\+Time@{Message\+Display\+Time}!Slot\+Cooldown@{Slot\+Cooldown}}
+\subsubsection{\texorpdfstring{Message\+Display\+Time}{MessageDisplayTime}}
+{\footnotesize\ttfamily float Slot\+Cooldown\+::\+Message\+Display\+Time}
+
+
+
+Display time for player notifications. 
+
+\mbox{\Hypertarget{namespace_slot_cooldown_a1684ab6db297facc86efbca540cd19f9}\label{namespace_slot_cooldown_a1684ab6db297facc86efbca540cd19f9}} 
+\index{Slot\+Cooldown@{Slot\+Cooldown}!Slot\+Cooldown@{Slot\+Cooldown}}
+\index{Slot\+Cooldown@{Slot\+Cooldown}!Slot\+Cooldown@{Slot\+Cooldown}}
+\subsubsection{\texorpdfstring{Slot\+Cooldown}{SlotCooldown}}
+{\footnotesize\ttfamily float Slot\+Cooldown\+::\+Slot\+Cooldown}
+
+
+
+Cooldown time for slots in secounds. 
+
+\mbox{\Hypertarget{namespace_slot_cooldown_abd12b2304b5bf308744798daca9419f6}\label{namespace_slot_cooldown_abd12b2304b5bf308744798daca9419f6}} 
+\index{Slot\+Cooldown@{Slot\+Cooldown}!Suppress\+Merge\+Tribe\+Message@{Suppress\+Merge\+Tribe\+Message}}
+\index{Suppress\+Merge\+Tribe\+Message@{Suppress\+Merge\+Tribe\+Message}!Slot\+Cooldown@{Slot\+Cooldown}}
+\subsubsection{\texorpdfstring{Suppress\+Merge\+Tribe\+Message}{SuppressMergeTribeMessage}}
+{\footnotesize\ttfamily F\+String Slot\+Cooldown\+::\+Suppress\+Merge\+Tribe\+Message}
+
+
+
+Message for the player if tribe merge is not possible. 
+
+\mbox{\Hypertarget{namespace_slot_cooldown_ad9b4de67b82bb1e9f21fd5d5674b34be}\label{namespace_slot_cooldown_ad9b4de67b82bb1e9f21fd5d5674b34be}} 
+\index{Slot\+Cooldown@{Slot\+Cooldown}!Suppress\+Player\+Join\+Tribe\+Message@{Suppress\+Player\+Join\+Tribe\+Message}}
+\index{Suppress\+Player\+Join\+Tribe\+Message@{Suppress\+Player\+Join\+Tribe\+Message}!Slot\+Cooldown@{Slot\+Cooldown}}
+\subsubsection{\texorpdfstring{Suppress\+Player\+Join\+Tribe\+Message}{SuppressPlayerJoinTribeMessage}}
+{\footnotesize\ttfamily F\+String Slot\+Cooldown\+::\+Suppress\+Player\+Join\+Tribe\+Message}
+
+
+
+Message for the player if tribe join is not possible. 
+

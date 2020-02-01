@@ -1,0 +1,99 @@
+\hypertarget{_hooks_8h}{}\section{Hooks/\+Hooks.h File Reference}
+\label{_hooks_8h}\index{Hooks/\+Hooks.\+h@{Hooks/\+Hooks.\+h}}
+
+
+File containing the implementation for all needed Hooks.  
+
+
+{\ttfamily \#include \char`\"{}Tools.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Requests.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}I\+Commands.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}I\+Hooks.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}A\+P\+I/\+A\+R\+K/\+Ark.\+h\char`\"{}}\newline
+Include dependency graph for Hooks.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_hooks_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{_hooks_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_hooks_8h_a1dea30ea2d347da31e3339a1f72ab830}{D\+E\+C\+L\+A\+R\+E\+\_\+\+H\+O\+OK}} (A\+Shooter\+Player\+State\+\_\+\+Add\+To\+Tribe, bool, A\+Shooter\+Player\+State $\ast$, F\+Tribe\+Data $\ast$, bool, bool, bool, A\+Player\+Controller $\ast$)
+\begin{DoxyCompactList}\small\item\em declare of A\+Shooter\+Player\+State\+\_\+\+Add\+To\+Tribe Hook \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_hooks_8h_adae8ecd506a04eca9e4229161e89a26c}{D\+E\+C\+L\+A\+R\+E\+\_\+\+H\+O\+OK}} (A\+Shooter\+Game\+Mode\+\_\+\+Remove\+Player\+From\+Tribe, void, A\+Shooter\+Game\+Mode $\ast$, unsigned \+\_\+\+\_\+int64, unsigned \+\_\+\+\_\+int64, bool)
+\item 
+void \mbox{\hyperlink{_hooks_8h_a3d35c0782ddf529d074136c74e16703c}{Init\+Hooks}} (void)
+\begin{DoxyCompactList}\small\item\em Initialisation of needed Hooks. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_hooks_8h_a37fd3027b8b64aad7f198e4a6272a2f8}{Remove\+Hooks}} (void)
+\begin{DoxyCompactList}\small\item\em Cancellation of needed Hooks. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+File containing the implementation for all needed Hooks. 
+
+\begin{DoxyAuthor}{Author}
+Matthias Birnthaler 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+15 May 2019 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_hooks_8h_a1dea30ea2d347da31e3339a1f72ab830}\label{_hooks_8h_a1dea30ea2d347da31e3339a1f72ab830}} 
+\index{Hooks.\+h@{Hooks.\+h}!D\+E\+C\+L\+A\+R\+E\+\_\+\+H\+O\+OK@{D\+E\+C\+L\+A\+R\+E\+\_\+\+H\+O\+OK}}
+\index{D\+E\+C\+L\+A\+R\+E\+\_\+\+H\+O\+OK@{D\+E\+C\+L\+A\+R\+E\+\_\+\+H\+O\+OK}!Hooks.\+h@{Hooks.\+h}}
+\subsubsection{\texorpdfstring{D\+E\+C\+L\+A\+R\+E\+\_\+\+H\+O\+O\+K()}{DECLARE\_HOOK()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily D\+E\+C\+L\+A\+R\+E\+\_\+\+H\+O\+OK (\begin{DoxyParamCaption}\item[{A\+Shooter\+Player\+State\+\_\+\+Add\+To\+Tribe}]{,  }\item[{bool}]{,  }\item[{A\+Shooter\+Player\+State $\ast$}]{,  }\item[{F\+Tribe\+Data $\ast$}]{,  }\item[{bool}]{,  }\item[{bool}]{,  }\item[{bool}]{,  }\item[{A\+Player\+Controller $\ast$}]{ }\end{DoxyParamCaption})}
+
+
+
+declare of A\+Shooter\+Player\+State\+\_\+\+Add\+To\+Tribe Hook 
+
+$<$declare of A\+Shooter\+Game\+Mode\+\_\+\+Remove\+Player\+From\+Tribe Hook \mbox{\Hypertarget{_hooks_8h_adae8ecd506a04eca9e4229161e89a26c}\label{_hooks_8h_adae8ecd506a04eca9e4229161e89a26c}} 
+\index{Hooks.\+h@{Hooks.\+h}!D\+E\+C\+L\+A\+R\+E\+\_\+\+H\+O\+OK@{D\+E\+C\+L\+A\+R\+E\+\_\+\+H\+O\+OK}}
+\index{D\+E\+C\+L\+A\+R\+E\+\_\+\+H\+O\+OK@{D\+E\+C\+L\+A\+R\+E\+\_\+\+H\+O\+OK}!Hooks.\+h@{Hooks.\+h}}
+\subsubsection{\texorpdfstring{D\+E\+C\+L\+A\+R\+E\+\_\+\+H\+O\+O\+K()}{DECLARE\_HOOK()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily D\+E\+C\+L\+A\+R\+E\+\_\+\+H\+O\+OK (\begin{DoxyParamCaption}\item[{A\+Shooter\+Game\+Mode\+\_\+\+Remove\+Player\+From\+Tribe}]{,  }\item[{void}]{,  }\item[{A\+Shooter\+Game\+Mode $\ast$}]{,  }\item[{unsigned}]{\+\_\+\+\_\+int64,  }\item[{unsigned}]{\+\_\+\+\_\+int64,  }\item[{bool}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_hooks_8h_a3d35c0782ddf529d074136c74e16703c}\label{_hooks_8h_a3d35c0782ddf529d074136c74e16703c}} 
+\index{Hooks.\+h@{Hooks.\+h}!Init\+Hooks@{Init\+Hooks}}
+\index{Init\+Hooks@{Init\+Hooks}!Hooks.\+h@{Hooks.\+h}}
+\subsubsection{\texorpdfstring{Init\+Hooks()}{InitHooks()}}
+{\footnotesize\ttfamily void Init\+Hooks (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Initialisation of needed Hooks. 
+
+This function initialise all needed Hooks
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_hooks_8h_a37fd3027b8b64aad7f198e4a6272a2f8}\label{_hooks_8h_a37fd3027b8b64aad7f198e4a6272a2f8}} 
+\index{Hooks.\+h@{Hooks.\+h}!Remove\+Hooks@{Remove\+Hooks}}
+\index{Remove\+Hooks@{Remove\+Hooks}!Hooks.\+h@{Hooks.\+h}}
+\subsubsection{\texorpdfstring{Remove\+Hooks()}{RemoveHooks()}}
+{\footnotesize\ttfamily void Remove\+Hooks (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Cancellation of needed Hooks. 
+
+This function removes all needed Hooks.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}

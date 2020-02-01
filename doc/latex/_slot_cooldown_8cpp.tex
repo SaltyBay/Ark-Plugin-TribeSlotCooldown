@@ -1,0 +1,67 @@
+\hypertarget{_slot_cooldown_8cpp}{}\section{Slot\+Cooldown/\+Slot\+Cooldown.cpp File Reference}
+\label{_slot_cooldown_8cpp}\index{Slot\+Cooldown/\+Slot\+Cooldown.\+cpp@{Slot\+Cooldown/\+Slot\+Cooldown.\+cpp}}
+
+
+Implementation of the player slots cooldown logic.  
+
+
+{\ttfamily \#include \char`\"{}Slot\+Cooldown.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+Include dependency graph for Slot\+Cooldown.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{_slot_cooldown_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_slot_cooldown}{Slot\+Cooldown}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespace_slot_cooldown_af1d102851d318b69e6b808f8c1b0f6fa}{Slot\+Cooldown\+::\+Init\+Slot\+Cooldown}} (void)
+\begin{DoxyCompactList}\small\item\em Initialisation of the Slot Cooldown. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_slot_cooldown_acadf0d52f01444ce96d02fefd725abe8}{Slot\+Cooldown\+::\+Normalize\+Slots}} (std\+::vector$<$ int $>$ $\ast$slots, long double Server\+Run\+Time)
+\begin{DoxyCompactList}\small\item\em Normalize slot cooldowns. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_slot_cooldown_ad36d7fcdac6fac169b44ce05b3ea98f9}{Slot\+Cooldown\+::\+Set\+Tribe\+Slot\+To\+Cooldown}} (int Tribe\+Id)
+\begin{DoxyCompactList}\small\item\em Sets tribe slot to cooldown. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespace_slot_cooldown_af34a0fce4996c0cb1f108dea38c9c00c}{Slot\+Cooldown\+::\+Suppress\+Player\+Join\+Tribe}} (int Tribe\+Id, int Players\+In\+Tribe)
+\begin{DoxyCompactList}\small\item\em Checks if it is possible to join a tribe. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespace_slot_cooldown_aa61b482a7729c7eb2a23d068f74477c3}{Slot\+Cooldown\+::\+Suppress\+Tribe\+Merge}} (int Tribe\+Id\+New\+Tribe, int Tribe\+Id\+Old\+Tribe, int Num\+Players\+In\+New\+Tribe, int Num\+Players\+In\+Old\+Tribe)
+\begin{DoxyCompactList}\small\item\em Checks if it is possible to merge a tribe. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+F\+String \mbox{\hyperlink{namespace_slot_cooldown_ad9b4de67b82bb1e9f21fd5d5674b34be}{Slot\+Cooldown\+::\+Suppress\+Player\+Join\+Tribe\+Message}}
+\begin{DoxyCompactList}\small\item\em Message for the player if tribe join is not possible. \end{DoxyCompactList}\item 
+F\+String \mbox{\hyperlink{namespace_slot_cooldown_abd12b2304b5bf308744798daca9419f6}{Slot\+Cooldown\+::\+Suppress\+Merge\+Tribe\+Message}}
+\begin{DoxyCompactList}\small\item\em Message for the player if tribe merge is not possible. \end{DoxyCompactList}\item 
+F\+String \mbox{\hyperlink{namespace_slot_cooldown_a96c0601961d6636388621ee070136bd8}{Slot\+Cooldown\+::\+Command\+Display\+Slots\+Message}}
+\begin{DoxyCompactList}\small\item\em Message for the player with the total of tribe player slots with cooldown. \end{DoxyCompactList}\item 
+F\+String \mbox{\hyperlink{namespace_slot_cooldown_ac0a5c9ed81d34ecf571126bc0ce8e1e7}{Slot\+Cooldown\+::\+Command\+Display\+Slots\+Message\+Slot\+Cooldown}}
+\begin{DoxyCompactList}\small\item\em Message for the player with the left time for a slots cooldown. \end{DoxyCompactList}\item 
+F\+String \mbox{\hyperlink{namespace_slot_cooldown_a5b94faf2e06664e82c8811880e3ac662}{Slot\+Cooldown\+::\+Command\+Prefix}}
+\begin{DoxyCompactList}\small\item\em Prefix for chat commands. \end{DoxyCompactList}\item 
+F\+String \mbox{\hyperlink{namespace_slot_cooldown_a5785ecad34ad6558721c26503620eeb2}{Slot\+Cooldown\+::\+Command\+Display\+Slots}}
+\begin{DoxyCompactList}\small\item\em String for chat command display slots with cooldown. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{namespace_slot_cooldown_a45d147dcd56cfa641b7dc9f9303db683}{Slot\+Cooldown\+::\+Message\+Display\+Size}}
+\begin{DoxyCompactList}\small\item\em Size of player notifications. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{namespace_slot_cooldown_a9c1b0776e8b6e909e5a94f465c7669e1}{Slot\+Cooldown\+::\+Message\+Display\+Time}}
+\begin{DoxyCompactList}\small\item\em Display time for player notifications. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{namespace_slot_cooldown_a1684ab6db297facc86efbca540cd19f9}{Slot\+Cooldown\+::\+Slot\+Cooldown}}
+\begin{DoxyCompactList}\small\item\em Cooldown time for slots in secounds. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implementation of the player slots cooldown logic. 
+
+\begin{DoxyAuthor}{Author}
+Matthias Birnthaler 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+15 May 2019 
+\end{DoxyDate}

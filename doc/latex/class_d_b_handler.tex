@@ -1,0 +1,167 @@
+\hypertarget{class_d_b_handler}{}\section{D\+B\+Handler Class Reference}
+\label{class_d_b_handler}\index{D\+B\+Handler@{D\+B\+Handler}}
+
+
+{\ttfamily \#include $<$D\+B\+Handler.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_d_b_handler_a47f7963b489c9a50d9ed1ebad4427e92}{$\sim$\+D\+B\+Handler}} ()=default
+\item 
+\mbox{\hyperlink{class_d_b_handler_a5b98990456fb4436208d835332ee7a3e}{D\+B\+Handler}} (const std\+::string \&path)
+\begin{DoxyCompactList}\small\item\em Constructor of the DB Handler. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_d_b_handler_a8bf2abc53f0c4d7041fd8dacd3195df6}{Add\+Tribe}} (const int Tribe\+Id)
+\begin{DoxyCompactList}\small\item\em Add tribe to database. \end{DoxyCompactList}\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{class_d_b_handler_aa829e3513b65be297f2bd4e5ab042e35}{Get\+Tribe\+Slots\+Timer}} (const int Tribe\+Id)
+\begin{DoxyCompactList}\small\item\em Get tribe slots timer. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_d_b_handler_a62abea29518dc76d3fce4f05f78780d2}{Update\+Slot\+Timer}} (const int Tribe\+Id, const std\+::vector$<$ int $>$ Slot\+Timer)
+\begin{DoxyCompactList}\small\item\em Update slots cooldown. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_d_b_handler_a4dc6835ae9459d3faacb8131b67a00d3}{Is\+Tribe\+In\+Database}} (int Tribe\+Id)
+\begin{DoxyCompactList}\small\item\em Checks if tribe is in database. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_d_b_handler_ad58b74ff1ddb803d2fe7e93744c6eb5f}{Delete\+Tribe}} (int Tribe\+Id)
+\begin{DoxyCompactList}\small\item\em Delete tribe. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Database Inferface class 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_d_b_handler_a47f7963b489c9a50d9ed1ebad4427e92}\label{class_d_b_handler_a47f7963b489c9a50d9ed1ebad4427e92}} 
+\index{D\+B\+Handler@{D\+B\+Handler}!````~D\+B\+Handler@{$\sim$\+D\+B\+Handler}}
+\index{````~D\+B\+Handler@{$\sim$\+D\+B\+Handler}!D\+B\+Handler@{D\+B\+Handler}}
+\subsubsection{\texorpdfstring{$\sim$\+D\+B\+Handler()}{~DBHandler()}}
+{\footnotesize\ttfamily virtual D\+B\+Handler\+::$\sim$\+D\+B\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+destructor of the \mbox{\hyperlink{class_d_b_handler}{D\+B\+Handler}} \mbox{\Hypertarget{class_d_b_handler_a5b98990456fb4436208d835332ee7a3e}\label{class_d_b_handler_a5b98990456fb4436208d835332ee7a3e}} 
+\index{D\+B\+Handler@{D\+B\+Handler}!D\+B\+Handler@{D\+B\+Handler}}
+\index{D\+B\+Handler@{D\+B\+Handler}!D\+B\+Handler@{D\+B\+Handler}}
+\subsubsection{\texorpdfstring{D\+B\+Handler()}{DBHandler()}}
+{\footnotesize\ttfamily D\+B\+Handler\+::\+D\+B\+Handler (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor of the DB Handler. 
+
+constructor of the \mbox{\hyperlink{class_d_b_handler}{D\+B\+Handler}}
+
+This initialisation of the database
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em path} & string the the database, if empty the default path will get used \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_d_b_handler_a8bf2abc53f0c4d7041fd8dacd3195df6}\label{class_d_b_handler_a8bf2abc53f0c4d7041fd8dacd3195df6}} 
+\index{D\+B\+Handler@{D\+B\+Handler}!Add\+Tribe@{Add\+Tribe}}
+\index{Add\+Tribe@{Add\+Tribe}!D\+B\+Handler@{D\+B\+Handler}}
+\subsubsection{\texorpdfstring{Add\+Tribe()}{AddTribe()}}
+{\footnotesize\ttfamily void D\+B\+Handler\+::\+Add\+Tribe (\begin{DoxyParamCaption}\item[{const int}]{Tribe\+Id }\end{DoxyParamCaption})}
+
+
+
+Add tribe to database. 
+
+database interfaces; see implementation for further information
+
+Interface to add a tribeid to the database
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em Tribe\+Id} & the tribe id to add \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_d_b_handler_ad58b74ff1ddb803d2fe7e93744c6eb5f}\label{class_d_b_handler_ad58b74ff1ddb803d2fe7e93744c6eb5f}} 
+\index{D\+B\+Handler@{D\+B\+Handler}!Delete\+Tribe@{Delete\+Tribe}}
+\index{Delete\+Tribe@{Delete\+Tribe}!D\+B\+Handler@{D\+B\+Handler}}
+\subsubsection{\texorpdfstring{Delete\+Tribe()}{DeleteTribe()}}
+{\footnotesize\ttfamily void D\+B\+Handler\+::\+Delete\+Tribe (\begin{DoxyParamCaption}\item[{int}]{Tribe\+Id }\end{DoxyParamCaption})}
+
+
+
+Delete tribe. 
+
+Interface to delete a given Tribe in the database
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em Tribe\+Id} & the tribe id to look for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool true if the tribe is in the database, otherwise false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_d_b_handler_aa829e3513b65be297f2bd4e5ab042e35}\label{class_d_b_handler_aa829e3513b65be297f2bd4e5ab042e35}} 
+\index{D\+B\+Handler@{D\+B\+Handler}!Get\+Tribe\+Slots\+Timer@{Get\+Tribe\+Slots\+Timer}}
+\index{Get\+Tribe\+Slots\+Timer@{Get\+Tribe\+Slots\+Timer}!D\+B\+Handler@{D\+B\+Handler}}
+\subsubsection{\texorpdfstring{Get\+Tribe\+Slots\+Timer()}{GetTribeSlotsTimer()}}
+{\footnotesize\ttfamily std\+::vector$<$ int $>$ D\+B\+Handler\+::\+Get\+Tribe\+Slots\+Timer (\begin{DoxyParamCaption}\item[{const int}]{Tribe\+Id }\end{DoxyParamCaption})}
+
+
+
+Get tribe slots timer. 
+
+Interface to select the slots cooldowns of a given tribe
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em Tribe\+Id} & the tribe to look for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$int$>$ vector cooldown times 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_d_b_handler_a4dc6835ae9459d3faacb8131b67a00d3}\label{class_d_b_handler_a4dc6835ae9459d3faacb8131b67a00d3}} 
+\index{D\+B\+Handler@{D\+B\+Handler}!Is\+Tribe\+In\+Database@{Is\+Tribe\+In\+Database}}
+\index{Is\+Tribe\+In\+Database@{Is\+Tribe\+In\+Database}!D\+B\+Handler@{D\+B\+Handler}}
+\subsubsection{\texorpdfstring{Is\+Tribe\+In\+Database()}{IsTribeInDatabase()}}
+{\footnotesize\ttfamily bool D\+B\+Handler\+::\+Is\+Tribe\+In\+Database (\begin{DoxyParamCaption}\item[{int}]{Tribe\+Id }\end{DoxyParamCaption})}
+
+
+
+Checks if tribe is in database. 
+
+Interface to check if a given tribe is in the database
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em Tribe\+Id} & the tribe id to look for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool true if the tribe is in the database, otherwise false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_d_b_handler_a62abea29518dc76d3fce4f05f78780d2}\label{class_d_b_handler_a62abea29518dc76d3fce4f05f78780d2}} 
+\index{D\+B\+Handler@{D\+B\+Handler}!Update\+Slot\+Timer@{Update\+Slot\+Timer}}
+\index{Update\+Slot\+Timer@{Update\+Slot\+Timer}!D\+B\+Handler@{D\+B\+Handler}}
+\subsubsection{\texorpdfstring{Update\+Slot\+Timer()}{UpdateSlotTimer()}}
+{\footnotesize\ttfamily bool D\+B\+Handler\+::\+Update\+Slot\+Timer (\begin{DoxyParamCaption}\item[{const int}]{Tribe\+Id,  }\item[{const std\+::vector$<$ int $>$}]{Slot\+Timer }\end{DoxyParamCaption})}
+
+
+
+Update slots cooldown. 
+
+Interface to update the slots cooldown of a given tribe
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em Tribe\+Id} & the tribe id \\
+\hline
+\mbox{\tt in}  & {\em Slot\+Timer} & vector with the cooldown slots \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool true, if update was possible, otherwise false 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+B\+Handler/\mbox{\hyperlink{_d_b_handler_8h}{D\+B\+Handler.\+h}}\item 
+D\+B\+Handler/\mbox{\hyperlink{_d_b_handler_8cpp}{D\+B\+Handler.\+cpp}}\end{DoxyCompactItemize}
