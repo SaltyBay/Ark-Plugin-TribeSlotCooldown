@@ -19,7 +19,7 @@ set Description=Cooldown for playerslots of tribes
 REM ========================================================
 REM configure Version
 REM ========================================================
-set Version=1.1
+set Version=1.2
 
 REM ========================================================
 REM configure min api version

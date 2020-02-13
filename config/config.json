@@ -3,7 +3,8 @@
     "DbPathOverride":"",
     "SlotCooldown": 24,
     "MessageTextSize": 1.4,
-    "MessageDisplayDelay": 10
+    "MessageDisplayDelay": 10,
+	"AutoWipeDatabase": true
   },
   "Messages":{
     "SuppressPlayerJoinTribeMessage":"The Tribe you like to join does not have a free player spot",
