@@ -4,6 +4,7 @@
     "SlotCooldown": 24,
     "MessageTextSize": 1.4,
     "MessageDisplayDelay": 10,
+	"DelayActivationTime": 24,
 	"AutoWipeDatabase": true
   },
   "Messages":{
