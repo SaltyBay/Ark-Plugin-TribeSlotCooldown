@@ -37,11 +37,12 @@ set_target_properties(ark_api PROPERTIES
   INTERFACE_INCLUDE_DIRECTORIES ${PATH_ARK_API}/version/Core/Public
 )
 
-
 set_target_properties(${ProjectName} PROPERTIES LINKER_LANGUAGE CXX)
 target_link_libraries(${ProjectName} 
 PRIVATE
-	ark_api)
+	ark_api
+	${CMAKE_CURRENT_SOURCE_DIR}/libs/libmysql.lib
+	${CMAKE_CURRENT_SOURCE_DIR}/libs/mysqlclient.lib)
 
 
 endif()
